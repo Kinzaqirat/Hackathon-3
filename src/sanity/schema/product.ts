@@ -1,6 +1,6 @@
 import { defineType } from "sanity";
 
-export let ProductSchema= defineType({
+export const ProductSchema= defineType({
    name:"product",
     title:"Product",    
     type:"document",

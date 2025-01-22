@@ -1,9 +1,6 @@
-import { AiOutlineUser } from "react-icons/ai";
+
 import { FiShoppingBag } from "react-icons/fi";
-import { RxCrossCircled } from "react-icons/rx";
 import { IoStarOutline } from "react-icons/io5";
-import { RiLogoutBoxLine } from "react-icons/ri";
-import { FaCheck } from "react-icons/fa6";
 
 
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator,DropdownMenuTrigger,} from "@/components/ui/dropdown-menu"
