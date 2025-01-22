@@ -1,10 +1,8 @@
-import { defineType, defineField } from "sanity";
+import { defineType } from "sanity";
 
 export let ProductSchema= defineType({
    name:"product",
-    title:"Product",
-
-    
+    title:"Product",    
     type:"document",
     fields:[
       {
@@ -62,6 +60,5 @@ export let ProductSchema= defineType({
     }
     
   }
-
-    ]
+]
 })
