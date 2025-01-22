@@ -7,8 +7,6 @@ import Image from 'next/image'
 // import sofa from ../../public/Asgaard sofa 1.png"
 import Navbar from '../components/header'
 // import CartContext
-import { SanityClient } from '@/sanity/sanity.client'
-import { groq } from 'next-sanity'
 import { CartContext } from '@/app/context/CartContext'
 import { MdDelete } from 'react-icons/md'
 

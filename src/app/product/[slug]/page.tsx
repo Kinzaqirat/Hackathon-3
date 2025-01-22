@@ -6,9 +6,6 @@ import { SanityClient } from "@/sanity/sanity.client";
 
 import Detaile from "../../components/detaile";
 
-
-import Link from "next/link";
-
 import { Image } from "sanity";
 
 

@@ -3,7 +3,6 @@ import Navbar from "../components/header"
 import React, { useContext } from 'react'
 import Link from 'next/link'
 import logo from "../../../public/logo.png"
-import { IoTime } from "react-icons/io5";
 import Image from 'next/image'
 import { CartContext } from '@/app/context/CartContext';
 
