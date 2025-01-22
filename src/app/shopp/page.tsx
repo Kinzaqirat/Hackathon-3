@@ -12,13 +12,8 @@ import { groq } from 'next-sanity'
 export default async function ShopPgae() {
   let Data = await SanityClient.fetch(groq `*[_type=="product"]
     `)
-
-
-
-
-
   return (
-    <div>
+    <>
       <Navbar/>
       <div>
       <div className="relative py-16 font-[sans-serif]">
@@ -146,6 +141,6 @@ export default async function ShopPgae() {
     </ul>
 </div>
 
-    </div>
+    </>
   )
 }
