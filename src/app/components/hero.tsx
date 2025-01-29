@@ -17,7 +17,7 @@ export default async function HeroSec() {
      
 
 {data2.map((item:any)=>(
-  <div className='bg-peach py-10 flex flex-col md:flex-row items-center justify-center gap-10 px-4 sm:px-6 lg:px-20'>
+  <div className=' bg-[#FBEBB5] py-10 flex flex-col md:flex-row items-center justify-center gap-10 px-4 sm:px-6 lg:px-20'>
     
    
   <div className='text-center md:text-left'>

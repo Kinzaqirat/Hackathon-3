@@ -9,6 +9,7 @@ export default function Detaile({products}:any) {
 
   const {qty,add,dec,addProduct,items}:any= useContext(CartContext)
   console.log(items);
+
   return (
     <div>
       <Navbar/>

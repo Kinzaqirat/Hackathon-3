@@ -1,5 +1,5 @@
 "use client"
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 
 import Link from 'next/link'
 import logo from "../../../public/logo.png"
@@ -14,7 +14,54 @@ import { MdDelete } from 'react-icons/md'
 export default  function Chart() {
   const {items,add ,dec,qty,totalQuantity,totalPrice,itemQty,remove} :any = useContext(CartContext);
 
-  // const {items,add ,dec,qty,totalQuantity,totalPrice,itemQty,remove} :any = useContext(CartContext);
+
+  const handleCheckout = async () => {
+   try {
+      const response = await fetch("/api/checkout", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ products :items}),
+      });
+        const data = await response.json();
+        if(data.url){
+          window.location.href = data.url
+        }
+        console.log(response);
+        
+    } catch (error) {
+      console.error("Error during checkout", error)
+    }
+    
+    
+  }
+  // const CheckoutButton = ({ cartItems }: { cartItems: any[] }) => {
+  //   const [loading, setLoading] = useState(false);
+  
+  //   const handleCheckout = async () => {
+  //     try {
+  //       setLoading(true);
+  //       console.log("🛍 Sending checkout request...");
+  
+  //       const response = await fetch("/api/checkout", {
+  //         method: "POST",
+  //         headers: { "Content-Type": "application/json" },
+  //         body: JSON.stringify({ products: cartItems }),
+  //       });
+  
+  //       if (!response.ok) throw new Error("Checkout API failed");
+  
+  //       const data = await response.json();
+  //       console.log("✅ Checkout Session URL:", data.url);
+  
+  //       window.location.href = data.url;
+  //     } catch (error) {
+  //       console.error("❌ Checkout Error:", error);
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   };
+  
+
   return (
     <div>
       <Navbar/>
@@ -165,7 +212,13 @@ export default  function Chart() {
           </ul>
 
           <div className='flex justify-center'>
-          <Link href={"/check"}><button type="button" className="mt-6 px-5 py-2.5 w-[200px] rounded-xl border border-black">Make Payment</button></Link>
+          {/* <button type="button" className="mt-6 px-5 py-2.5 w-[200px] rounded-xl border border-black" onClick={handleCheckout}>Make Payment</button> */}
+        
+          <button  className="mt-6 px-5 py-2.5 w-[200px] rounded-xl border border-black"
+      onClick={handleCheckout}
+      >
+        Payment
+    </button>
           </div>
           <br />
 
