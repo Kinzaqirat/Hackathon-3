@@ -197,7 +197,7 @@ export default async function Home() {
 <br />
 
 </div>  
-    <Footer/>
+    
   </div>
   );
 }
