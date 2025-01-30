@@ -43,7 +43,7 @@ return (
   <div>
 
 <Detaile products ={products} />
-{/* <HeroSec  product ={product2}/> */}
+
   </div>
 )
 }

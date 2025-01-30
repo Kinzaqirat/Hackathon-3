@@ -2,7 +2,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import Navbar from "../components/header"
-import { useContext,createContext } from "react";
+import { useContext} from "react";
 import { CartContext } from "../context/CartContext";
 
 export default function Detaile({products}:any) {
@@ -145,19 +145,10 @@ export default function Detaile({products}:any) {
                        
     
                         <div className="flex flex-wrap gap-4  snipcart-add-item"> 
-                            {/* <button type="button" className="min-w-[200px] px-4 py-3 text-black montserrat text-sm border border-black rounded-xl snipcart-add-item"
-                            data-item-id="324"
-                            data-item-price="250,000.00"
-                            data-item-description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum"
-                              data-item-url="www.google.com"
-                            data-item-image="/Asgaard sofa 1.png"
-                            data-item-name="Asgraad Sofa"> Add to Cart</button> */}
-                  <button className=" border border-black rounded-xl w-[130px] h-[50px] " onClick={()=>addProduct(products,qty)}
-      // data-item-id={products.id}
-      // data-item-price={products.price}
-      // data-item-description={products.description}
-      // data-item-image={products.imagePath}
-      // data-item-name={products.name}
+                         
+                     
+                  <button className=" border border-black rounded-xl w-[130px] h-[50px]  hover:bg-black hover:text-white" onClick={()=>addProduct(products,qty)}
+    
       >
       Add to cart
     </button>

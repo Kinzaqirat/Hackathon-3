@@ -113,10 +113,10 @@ export default async function Home() {
      
 
         <Sheet >
-        <SheetTrigger className="lg:hidden  xl:hidden ">
+        <SheetTrigger className="md:hidden ">
         <Menu className="text-2xl  bg-peach"/>
         </SheetTrigger>
-        <SheetContent className=" bg-peach text-black" >
+        <SheetContent className=" bg-white text-black" >
           <SheetHeader>
             <SheetTitle className="mt-5 mx-5 text-3xl hover:underline  font-thin ">Menu Bar</SheetTitle>
             <ul>

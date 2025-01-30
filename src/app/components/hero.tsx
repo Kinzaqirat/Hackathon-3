@@ -25,7 +25,7 @@ export default async function HeroSec() {
     <button  className="montserrat bg-transparent underline text-[30px] h-[50px] sm:text-[20px] sm:h-[40px] mt-5">Shop now</button>
   </div>
   <Link href={`/product/${item.slug.current}`}>
-  <div className='flex justify-center md:justify-end mt-10'>
+  <div className='flex justify-center md:justify-end mt-10 shadow'>
     
     <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=" " className='w-[400px] h-[400px] sm:w-[300px] sm:h-[300px] rounded-xl' />
   </div>

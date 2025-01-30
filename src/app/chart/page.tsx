@@ -214,7 +214,7 @@ export default  function Chart() {
           <div className='flex justify-center'>
           {/* <button type="button" className="mt-6 px-5 py-2.5 w-[200px] rounded-xl border border-black" onClick={handleCheckout}>Make Payment</button> */}
         
-          <button  className="mt-6 px-5 py-2.5 w-[200px] rounded-xl border border-black"
+          <button  className="mt-6 px-5 py-2.5 w-[200px] rounded-xl border border-black hover:bg-black hover:text-white"
       onClick={handleCheckout}
       >
         Payment

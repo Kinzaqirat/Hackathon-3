@@ -78,11 +78,11 @@ export default function Navbar() {
         </div>
   
         {/* Mobile Menu (Visible on small screens) */}
-        <Sheet>
-          <SheetTrigger className="md:hidden">
+        <Sheet >
+          <SheetTrigger className="md:hidden bg-white">
             <Menu className="text-2xl bg-white" />
           </SheetTrigger>
-          <SheetContent className="bg-peach text-black">
+          <SheetContent className="bg-white text-black">
             <SheetHeader>
               <SheetTitle className="mt-5 mx-5 text-3xl font-thin hover:underline">
                 Menu Bar
